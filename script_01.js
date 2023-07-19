@@ -16,6 +16,37 @@
 // output(arr[0]); // Index 0 (1. Position im Array)
 // output(arr[arr.length-1]); // Letzte Position im Array
 
+/* 02a. Theorie: Schleifen (for-schleife) */
+
+/* For -Schleifen als allg. Wiederholungs-Struktur */
+
+// for (let i = 0; i < 10; i++) {
+//     output(i);
+// }
+
+// Dekrement (obere Grenze --> untere Grenze)
+
+// for (let i = 20; i > 0; i--) {
+//     output(i);
+// }
+
+// Inkrement (var. Schrittweite)
+
+// for (let i = 70; i > 0; i-=3.5) {
+//     output(i);
+// }
+
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+// let arr = ["Ich","bin","der","schwule","Cagri","Kurt"];
+// for (let i = 0; i < arr.length; i++) {
+//     output(arr[i]);
+// }
+
+
+
+
+
+
 /**
  *   PRAXIS
  * 
@@ -43,31 +74,35 @@ return str;
 // word1,word2, .... wordN :: Semantische Struktur
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation semantisches Problem --> numerisches Problem
-output(getSentence("Ich","bin","der","coole","Sohrab","Arenja"));
+// output(getSentence("Ich","bin","der","coole","Sohrab","Arenja"));
 
-function getSentenceArr(arr) {
+// function getSentenceArr(arr) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   arr[0] + GAP +
+//                 arr[1] + GAP +
+//                 arr[2] + GAP +
+//                 arr[3] + GAP +
+//                 arr[4] + GAP +
+//                 arr[5] + PUNCT;
+// return str;
+// }
+
+/*** 01b. Funktionalität mit Array 2  */
+// Transponierung:  untereinander ---> nebeneinander
+// Helge Schneider: Anananandereihung ...
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";
-    let str =   arr[0] + GAP +
-                arr[1] + GAP +
-                arr[2] + GAP +
-                arr[3] + GAP +
-                arr[4] + GAP +
-                arr[5] + PUNCT;
-return str;
+    let str; 
+
+    for (let i = 0; i < arr.length; i++) {
+    output(arr[i]); // Array-Index --> Mapping
+    }
+    return str;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Modul: Ausgabe in Konsole : Test
